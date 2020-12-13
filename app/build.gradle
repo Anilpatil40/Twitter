@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.swayam.twitter"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -28,6 +28,12 @@ android {
     }
 }
 
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
@@ -37,4 +43,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation "com.github.nikartm:fit-button:1.2.1"
+    implementation "com.github.parse-community.Parse-SDK-Android:parse:1.25.0"
+    implementation 'com.github.Shashank02051997:FancyToast-Android:0.1.8'
 }

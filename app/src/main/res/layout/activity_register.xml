@@ -31,6 +31,7 @@
                 android:src="@mipmap/twitter" />
 
             <EditText
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
@@ -42,6 +43,7 @@
                 android:paddingLeft="20dp" />
 
             <EditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
@@ -49,10 +51,12 @@
                 android:drawableLeft="@drawable/person"
                 android:drawablePadding="20dp"
                 android:hint="Password"
+                android:inputType="textPassword"
                 android:paddingStart="20dp"
                 android:paddingLeft="20dp" />
 
             <EditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
@@ -74,10 +78,13 @@
             android:layout_marginTop="40dp"
             android:elevation="0dp"
             android:gravity="center"
+            android:onClick="signUp"
             app:fb_backgroundColor="@android:color/white"
             app:fb_borderColor="@color/twitter_color"
             app:fb_borderWidth="2dp"
             app:fb_cornerRadius="30dp"
+            app:fb_enableRipple="true"
+            app:fb_rippleColor="@color/twitter_color"
             app:fb_shape="rectangle"
             app:fb_text="Sign Up"
             app:fb_textColor="@color/twitter_color"
@@ -88,7 +95,7 @@
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fitButton">
