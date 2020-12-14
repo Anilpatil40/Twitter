@@ -57,21 +57,6 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void showSuccessMessage(String message){
-        new MaterialAlertDialogBuilder(this)
-                .setCancelable(false)
-                .setTitle("Successful")
-                .setMessage(message)
-                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                })
-                .create()
-                .show();
-    }
-
     public void showErrorMessage(String error){
         new MaterialAlertDialogBuilder(this)
                 .setTitle("Error")
